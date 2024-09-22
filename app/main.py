@@ -3,6 +3,8 @@ import sys
 import os
 import time
 
+from embedchain import App
+
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
@@ -81,8 +83,7 @@ if __name__ == "__main__":
 
     if st.session_state.get("OPENAI_API_CONFIGURED") and st.session_state.get("submit_data_form"):
         st.markdown("Main App: Started")
-        # from embedchain import App
-        # gerd = App.from_config(configpath='config.py')
+        gerd = App.from_config(configpath='config.py')
         # ingesting data
         if not st.session_state.get("IS_CHATBOT_READY"):
             with st.spinner('Ingesting Data! Please Wait!'):
