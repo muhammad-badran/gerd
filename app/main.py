@@ -6,7 +6,6 @@ import time
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
-from embedchain.config import QueryConfig
 from app.components.sidebar import sidebar
 
 def ingest_data_dynamic(n):
@@ -85,6 +84,7 @@ if __name__ == "__main__":
     if st.session_state.get("OPENAI_API_CONFIGURED") and st.session_state.get("submit_data_form"):
         st.markdown("Main App: Started")
         from embedchain import App as ECApp
+        from embedchain.config import InitConfig, Queryconfig
         gerd = ECApp()
         # ingesting data
         if not st.session_state.get("IS_CHATBOT_READY"):
