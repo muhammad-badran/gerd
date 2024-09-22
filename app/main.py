@@ -20,7 +20,6 @@ def ingest_data_dynamic(n):
 def response_embedchain(query):
     """Logic for loading the chain you want to use should go here."""
     print(f'Calling response on: {query}')
-    query_config = QueryConfig(stream = True)
     response = gerd.query(query, query_config)
     return response
 
