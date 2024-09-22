@@ -6,6 +6,7 @@ import time
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
+from embedchain.config import QueryConfig
 from app.components.sidebar import sidebar
 
 def ingest_data_dynamic(n):
