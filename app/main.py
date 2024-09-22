@@ -25,9 +25,8 @@ config = {
             'system_prompt': (
                 "Act as William Shakespeare. Answer the following questions in the style of William Shakespeare."
             ),
-            'api_key': 'sk-xxx',
+            'api_key': api_key,
             "model_kwargs": {"response_format": {"type": "json_object"}},
-            "http_client_proxies": "http://testproxy.mem0.net:8000",
         }
     },
     'vectordb': {
@@ -42,8 +41,7 @@ config = {
         'provider': 'openai',
         'config': {
             'model': 'text-embedding-3-small',
-            'api_key': 'sk-xxx',
-            "http_client_proxies": "http://testproxy.mem0.net:8000",
+            'api_key': api_key,
         }
     },
     'chunker': {
