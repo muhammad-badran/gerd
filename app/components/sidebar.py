@@ -2,8 +2,6 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-os.environ["PINECONE_API_KEY"] = "a4bfa7a8-e707-4cca-b889-95f5bc879d7c"
-
 def set_open_api_key(api_key: str):
     st.session_state["OPENAI_API_KEY"] = api_key
     os.environ["OPENAI_API_KEY"] = api_key
