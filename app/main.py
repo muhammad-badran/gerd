@@ -30,11 +30,16 @@ config = {
         }
     },
     'vectordb': {
-        'provider': 'chroma',
+        'provider': 'pinecone',
         'config': {
-            'collection_name': 'full-stack-app',
-            'dir': 'db',
-            'allow_reset': True
+            'metric': 'dotproduct',
+            'vector_dimension': 1536,
+            'index_name': 'my-index',
+            'serverless_config': {
+                'cloud': 'aws',
+                'region': 'us-west-2'
+            },
+            'hybrid_search': True, # Remember to set this for hybrid search
         }
     },
     'embedder': {
