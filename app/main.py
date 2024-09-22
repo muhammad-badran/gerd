@@ -84,7 +84,7 @@ if __name__ == "__main__":
     if st.session_state.get("OPENAI_API_CONFIGURED") and st.session_state.get("submit_data_form"):
         st.markdown("Main App: Started")
         from embedchain import App as ECApp
-        from embedchain.config import InitConfig, Queryconfig
+    
         gerd = ECApp()
         # ingesting data
         if not st.session_state.get("IS_CHATBOT_READY"):
