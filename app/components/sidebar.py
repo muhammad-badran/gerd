@@ -54,9 +54,9 @@ def sidebar():
             """
             | Source    | URL |
             | -------- | ------- |
-            | youtube  | https://www.youtube.com/watch?v=arDEcQNJVTY   |
-            | pdf_file | https://navalmanack.s3.amazonaws.com/Eric-Jorgenson_The-Almanack-of-Naval-Ravikant_Final.pdf    |
-            | web    | https://nav.al/feedback  |
+            | youtube  | https://www.youtube.com/watch?v=Xg1bqjKv-zg   |
+            | pdf_file | https://car.ca/wp-content/uploads/2024/01/Gastrointestinal-guideline_Final-publication.pdf    |
+            | web    | https://en.wikipedia.org/wiki/Gastroesophageal_reflux_disease  |
             |qna_pair| "What does GERD stand for?", "GERD, or Gastroesophageal Reflux Disease, is a medical condition where the reflux of stomach contents into the esophagus." |
             
             Question: What are symptoms of reflux? 
