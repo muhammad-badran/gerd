@@ -38,7 +38,7 @@ def add_form_row(row):
         data_columns = st.columns(1)
         with data_columns[0]:
             st.text_input(f"Enter Doc URL: {row}",
-                            value="https://www.youtube.com/watch?v=3qHkcs3kG44",
+                            value="https://www.youtube.com/watch?v=Xg1bqjKv-zg",
                             key=f"value_{row}")
         st.form_submit_button(on_click=add_data_form(row))
 
