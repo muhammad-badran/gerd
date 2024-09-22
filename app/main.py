@@ -3,6 +3,11 @@ import sys
 import os
 import time
 
+sys.path.append(os.path.abspath('.'))
+
+import streamlit as st
+from app.components.sidebar import sidebar
+
 config = {
     'app': {
         'config': {
@@ -68,10 +73,8 @@ config = {
 }
 
 
-sys.path.append(os.path.abspath('.'))
 
-import streamlit as st
-from app.components.sidebar import sidebar
+
 
 def ingest_data_dynamic(n):
     print(f'Number of Data Sources are {n}')
