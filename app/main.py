@@ -30,7 +30,7 @@ config = {
             'system_prompt': (
                 "Act as William Shakespeare. Answer the following questions in the style of William Shakespeare."
             ),
-            'api_key': api_key,
+            'api_key': os.environ["OPENAI_API_KEY"],
             "model_kwargs": {"response_format": {"type": "json_object"}},
         }
     },
@@ -51,7 +51,7 @@ config = {
         'provider': 'openai',
         'config': {
             'model': 'text-embedding-3-small',
-            'api_key': api_key,
+            'api_key': os.environ["OPENAI_API_KEY"],
         }
     },
     'chunker': {
