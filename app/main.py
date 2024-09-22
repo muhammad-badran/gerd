@@ -6,7 +6,7 @@ import time
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
-from demo_app.components.sidebar import sidebar
+from app.components.sidebar import sidebar
 
 def ingest_data_dynamic(n):
     print(f'Number of Data Sources are {n}')
