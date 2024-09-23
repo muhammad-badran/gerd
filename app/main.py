@@ -2,7 +2,7 @@
 import sys
 import os
 import time
-import embedchain.App
+import embedchain
 
 sys.path.append(os.path.abspath('.'))
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     if st.session_state.get("OPENAI_API_CONFIGURED") and st.session_state.get("submit_data_form"):
         st.markdown("Main App: Started")
-        gerd = App()
+        gerd = embedchain.App()
         # ingesting data
         if not st.session_state.get("IS_CHATBOT_READY"):
             with st.spinner('Ingesting Data! Please Wait!'):
