@@ -2,7 +2,7 @@
 import sys
 import os
 import time
-from embedchain import *
+import embedchain.App
 
 sys.path.append(os.path.abspath('.'))
 
